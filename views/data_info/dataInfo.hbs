@@ -25,11 +25,12 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <h2>Data <b>parameter</b></h2>
+                            <h3 id="nameMachine">Machine 1</h3>
                         </div>
                         <div class="col-xs-6">
-                            <a class="btn btn-success"></i> <span>Machine 3</span></a>
-                            <a class="btn btn-success"></i> <span>Machine 2</span></a>
-                            <a class="btn btn-success"></i> <span>Machine 1</span></a>
+                            <a class="btn btn-success" onclick="selectMachine(3)"></i> <span>Machine 3</span></a>
+                            <a class="btn btn-success" onclick="selectMachine(2)"></i> <span>Machine 2</span></a>
+                            <a class="btn btn-success" onclick="selectMachine(1)"></i> <span>Machine 1</span></a>
                             {{!-- <a href="#deleteEmployeeModal" class="btn btn-danger">&#xE15C;</i>
                                 <span>Delete</span></a> --}}
                         </div>
@@ -41,6 +42,7 @@
         <div class="data-responsive">
             <div class="data-wrapper">
                 <div class="row">
+<<<<<<< Updated upstream
                     <div class="card col-md-3" style="">
                         <div class="card-body">
                             <h1 class="card-title">Card title</h1>
@@ -74,12 +76,102 @@
                             <h1 class="card-title">Card title</h1>
                             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                             {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+=======
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h1 class="card-title"><b>15</b></h1>
+                                <h6 class="card-subtitle mb-2 text-muted">Thể tích khí thở ra</h6>
+                                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                         <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h1 class="card-title">20 min</h1>
+                                <h6 class="card-subtitle mb-2 text-muted">Thời gian thở ra</h6>
+                                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                         <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h1 class="card-title">15%</h1>
+                                <h6 class="card-subtitle mb-2 text-muted">Tỉ lệ Oxy thì thở vào</h6>
+                                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                         <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h1 class="card-title">20%</h1>
+                                <h6 class="card-subtitle mb-2 text-muted">Tỉ lệ I:E</h6>
+                                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h1 class="card-title"><b>20</b></h1>
+                                <h6 class="card-subtitle mb-2 text-muted">Thể tích khí thở vào</h6>
+                                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                         <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h1 class="card-title">20 min</h1>
+                                <h6 class="card-subtitle mb-2 text-muted">Thời gian thở vào</h6>
+                                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                         <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h1 class="card-title">30%</h1>
+                                <h6 class="card-subtitle mb-2 text-muted">Dò khí</h6>
+                                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                         <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h1 class="card-title">20 mm/min</h1>
+                                <h6 class="card-subtitle mb-2 text-muted">Thể tích theo phút</h6>
+                                {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
+                            </div>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function selectMachine(id_machine){
+            console.log("Check selectMachine");
+            let nameMachine = document.getElementById("nameMachine");
+            if(id_machine == 1){
+                nameMachine.innerHTML = "Machine 1";
+            } else if (id_machine == 2) {
+                nameMachine.innerHTML = "Machine 2";
+            } else if (id_machine == 3) {
+                nameMachine.innerHTML = "Machine 3";
+            }else{
+                //Do nothing
+            }
+        }
+    </script>
 </body>
 
 </html>
