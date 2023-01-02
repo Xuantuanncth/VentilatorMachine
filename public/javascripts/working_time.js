@@ -100,7 +100,7 @@ function createElement(value){
                     child_tb = createTemplateData("","",element,value.time_off[index_temp]);
                     mainTb.appendChild(child_tb);
                 } else {
-                    child_tb = createTemplateData("","",element,"");
+                    child_tb = createTemplateData("","",element,"0");
                     mainTb.appendChild(child_tb);
                 }
             }
@@ -117,7 +117,7 @@ function createElement(value){
                     child_tb = createTemplateData("","",value.time_on[index_temp],element);
                     mainTb.appendChild(child_tb);
                 } else {
-                    child_tb = createTemplateData("","","",element);
+                    child_tb = createTemplateData("","","0",element);
                     mainTb.appendChild(child_tb);
                 }
             }

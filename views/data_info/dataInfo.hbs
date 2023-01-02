@@ -45,7 +45,7 @@
                     <div class="col-sm-3">
                         <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h1 class="card-title"><b>15</b></h1>
+                                <h1 id="v_out1" class="card-title">15<span style="font-size: medium;">mm3</span></h1>
                                 <h6 class="card-subtitle mb-2 text-muted">Thể tích khí thở ra</h6>
                                 {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                             </div>
@@ -54,7 +54,7 @@
                     <div class="col-sm-3">
                          <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h1 class="card-title">20 min</h1>
+                                <h1 id="time_out1" class="card-title">20 <span style="font-size: medium;">min</span> </h1>
                                 <h6 class="card-subtitle mb-2 text-muted">Thời gian thở ra</h6>
                                 {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                             </div>
@@ -63,7 +63,7 @@
                     <div class="col-sm-3">
                          <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h1 class="card-title">15%</h1>
+                                <h1 id="oxi_in1" class="card-title">15 <span style="font-size: medium;">%</span></h1>
                                 <h6 class="card-subtitle mb-2 text-muted">Tỉ lệ Oxy thì thở vào</h6>
                                 {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                             </div>
@@ -72,7 +72,7 @@
                     <div class="col-sm-3">
                          <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h1 class="card-title">20%</h1>
+                                <h1 id="IE1" class="card-title">20 <span style="font-size: medium;">%</span></h1>
                                 <h6 class="card-subtitle mb-2 text-muted">Tỉ lệ I:E</h6>
                                 {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                             </div>
@@ -84,7 +84,7 @@
                     <div class="col-sm-3">
                         <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h1 class="card-title"><b>20</b></h1>
+                                <h1 id="v_in1" class="card-title">20 <span style="font-size: medium;">mm3</span></h1>
                                 <h6 class="card-subtitle mb-2 text-muted">Thể tích khí thở vào</h6>
                                 {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                             </div>
@@ -93,7 +93,7 @@
                     <div class="col-sm-3">
                          <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h1 class="card-title">20 min</h1>
+                                <h1 id="time_in1" class="card-title">20 <span style="font-size: medium;">min</span></h1>
                                 <h6 class="card-subtitle mb-2 text-muted">Thời gian thở vào</h6>
                                 {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                             </div>
@@ -102,7 +102,7 @@
                     <div class="col-sm-3">
                          <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h1 class="card-title">30%</h1>
+                                <h1 id="DoKhi1" class="card-title">30<span style="font-size: medium;">%</span></h1>
                                 <h6 class="card-subtitle mb-2 text-muted">Dò khí</h6>
                                 {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                             </div>
@@ -111,7 +111,7 @@
                     <div class="col-sm-3">
                          <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h1 class="card-title">20 mm/min</h1>
+                                <h1 id="v_minute" class="card-title">20 <span style="font-size: medium;">min/mm3</span></h1>
                                 <h6 class="card-subtitle mb-2 text-muted">Thể tích theo phút</h6>
                                 {{!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
                             </div>
@@ -125,6 +125,7 @@
         function selectMachine(id_machine){
             console.log("Check selectMachine");
             let nameMachine = document.getElementById("nameMachine");
+            getRandomData();
             if(id_machine == 1){
                 nameMachine.innerHTML = "Machine 1";
             } else if (id_machine == 2) {
@@ -135,6 +136,40 @@
                 //Do nothing
             }
         }
+
+        let v_out1 = document.getElementById("v_out1");
+        let time_out1 = document.getElementById("time_out1");
+        let oxi_in1 = document.getElementById("oxi_in1");
+        let IE1 = document.getElementById("IE1");
+        let v_in1 = document.getElementById("v_in1");
+        let time_in1 = document.getElementById("time_in1");
+        let DoKhi1 = document.getElementById("DoKhi1");
+        let v_minute = document.getElementById("v_minute");
+
+        function getRandomData(){
+            v_out1.innerHTML=getRandomInt(10, 15)+`<span style="font-size: medium;">mm3</span>`;
+            time_out1.innerHTML=getRandomInt(20,30)+`<span style="font-size: medium;">min</span>`;
+            oxi_in1.innerHTML= getRandomInt(10, 40)+`<span style="font-size: medium;">%</span>`;
+            IE1.innerHTML = getRandomInt(10, 50)+`<span style="font-size: medium;">%</span>`;
+            v_in1.innerHTML = getRandomInt(10, 50)+`<span style="font-size: medium;">mm3</span>`;
+            time_in1.innerHTML = getRandomInt(10, 60)+`<span style="font-size: medium;">min</span>`;
+            DoKhi1.innerHTML = getRandomInt(10, 50)+`<span style="font-size: medium;">%</span>`;
+            v_minute.innerHTML = getRandomInt(10, 50)+`<span style="font-size: medium;">min/mm3</span>`;
+        }
+
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+        }
+
+        window.onload = function loadData(){
+            getRandomData();
+        }
+
     </script>
 </body>
 
