@@ -160,5 +160,33 @@
       ]
     }
   ],
-  "users": []
+  "users": [
+    {
+      "users_name": "Huong Xinh Đẹp Đáng Yêu",
+      "users_id": "1",
+      "users_birthday": "2023-01-11",
+      "users_sex": "female",
+      "users_address": "10 Chau Thi Vinh Te, Ngu Hanh Son",
+      "users_info": "Tuyển tập sách tác giả Mai Lan Hương, hàng ngàn tựa sách, cam kết hoàn tiền 111% nếu sách giả, nhiều mã giảm giá hôm nay, giảm giá đến 40%. Mua ngay!",
+      "users_avatar": "/images/avatar/1.jpg"
+    },
+    {
+      "users_name": "Ngo Lan Huong",
+      "users_id": "2",
+      "users_birthday": "2023-01-12",
+      "users_sex": "female",
+      "users_address": "10 Chau Thi Vinh Te, Ngu Hanh Son",
+      "users_info": "Ngô Lan Hương là ca sĩ, youtuber, Vlogger, hot girl người Việt Nam. Cô bước ra từ cuộc thi The Voice. Ngoài ra, cô nàng còn được gọi là “ Nữ sinh lớp 12 gây sốt với loạt clip cover siêu dễ thương” ",
+      "users_avatar": "/images/avatar/2.jpg"
+    },
+    {
+      "users_name": "Van Mai Huong",
+      "users_id": "3",
+      "users_birthday": "2023-01-12",
+      "users_sex": "female",
+      "users_address": "10 Bạch Đằng Đà Nẵng",
+      "users_info": "Văn Mai Hương là một nữ ca sĩ nhạc trẻ người Việt Nam. Cô được biết đến sau khi tham gia và đoạt ngôi vị Á quân Vietnam Idol 2010 vào ngày 25 tháng 12 năm 2010. ",
+      "users_avatar": "/images/avatar/3.jpg"
+    }
+  ]
 }
