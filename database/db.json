@@ -160,5 +160,33 @@
       ]
     }
   ],
-  "users": []
+  "users": [
+    {
+      "users_name": "Huong Xinh",
+      "users_id": "2",
+      "users_birthday": "2023-01-11",
+      "users_sex": "female",
+      "users_address": "10 Chau Thi Vinh Te, Ngu Hanh Son",
+      "users_info": "Huong is best girl",
+      "users_avatar": "/images/avatar/2.jpg"
+    },
+    {
+      "users_name": "Tuan Do Xuan",
+      "users_id": "1",
+      "users_birthday": "2023-01-11",
+      "users_sex": "male",
+      "users_address": "43 Phan Tu",
+      "users_info": "Tooltips and popovers can be placed within modals as needed. When modals are closed, any tooltips and popovers within are also automatically dismissed.",
+      "users_avatar": "/images/avatar/1.jpg"
+    },
+    {
+      "users_name": "Huong Xinh",
+      "users_id": "2",
+      "users_birthday": "2023-01-11",
+      "users_sex": "female",
+      "users_address": "10 Chau Thi Vinh Te, Ngu Hanh Son",
+      "users_info": "Huong is best girl in mind",
+      "users_avatar": "/images/avatar/2.jpg"
+    }
+  ]
 }
