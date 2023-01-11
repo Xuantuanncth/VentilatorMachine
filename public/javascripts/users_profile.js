@@ -5,7 +5,10 @@ let u_address = document.getElementById('users_address');
 let u_male = document.getElementById('users_sex_male');
 let u_female = document.getElementById('users_sex_female');
 let u_info = document.getElementById('users_info');
+<<<<<<< HEAD
 let u_avatar = document.getElementById('users_avatar');
+=======
+>>>>>>> ff3fa7404688e35b191e50a831b237fa27c87ade
 
 let view_name = document.getElementById('v_name');
 let view_date = document.getElementById('v_birthday');
@@ -25,7 +28,11 @@ function view_info_user(user_id) {
 function edit_info_user(user_id){
     console.log("[edit_user] ", user_id);
     getData(false,user_id);
+<<<<<<< HEAD
     $('#edit_user').modal('show')
+=======
+    $('#add_new_user').modal('show')
+>>>>>>> ff3fa7404688e35b191e50a831b237fa27c87ade
 }
 
 function getData(is_view,users_id){
@@ -56,10 +63,14 @@ function createDataView(is_view_data,data){
         u_date.value = data.users_birthday;
         u_address.value = data.users_address;
         u_id.value = data.users_id;
+<<<<<<< HEAD
         u_id.hidden = true;
         u_info.value= data.users_info
         u_avatar.required = "";
         u_avatar.disabled = true;
+=======
+        u_info.value= data.users_info
+>>>>>>> ff3fa7404688e35b191e50a831b237fa27c87ade
     }
 
 }
